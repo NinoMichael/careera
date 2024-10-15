@@ -1,4 +1,3 @@
-import './index.css'
 import './App.css'
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'

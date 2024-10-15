@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:css": "postcss src/index.css -o public/css/tailwind.css"
   },
   "dependencies": {
     "framer-motion": "^11.11.8",
