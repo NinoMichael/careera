@@ -64,7 +64,7 @@ const FirmDialog = ({ visibleFirm, setVisibleFirm, firmSelected, setFirmSelected
                     <div className="grid grid-cols-3 ms-20 -mt-4">
                         <div>
                             <h6 className="font-normal text-slate-400 font-poppins"><i className="pi pi-map-marker me-2"></i>Localisation</h6>
-                            <p className="-mt-6 font-poppins text-xs">Andraharo, Antananarivo 102</p>
+                            <p className="-mt-6 font-poppins text-xs">Andraharo, Antananarivo 101</p>
                         </div>
 
                         <div>
