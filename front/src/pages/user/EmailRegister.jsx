@@ -106,7 +106,7 @@ const EmailRegister = () => {
                         <Button label={t('next')} loading={loading} onClick={verifyEmail} className="border border-none outlline outline-none mx-auto w-96 font-poppins text-sm mt-10 mb-4 bg-greenCustom" />
                         <Dialog visible={emailInterface} modal onHide={() => { if (!emailInterface) return; setEmailInterface(false); }} className="w-[50%]">
                             <div className="mt-6 px-12">
-                                <h3 className="font-kanit text-center text-lg mt-4">Veuillez vérifier votre boîte e-mail</h3>
+                                <h3 className="font-kanit text-center text-lg mt-4">Veuiller vérifier votre boîte e-mail</h3>
                                 <p className="text-center text-sm font-poppins mt-4">Nous avons envoyé un email à votre adresse tix@gmail.com. Veuillez vérifier et continuer votre inscription à partir du lien envoyé</p>
                             </div>
 
