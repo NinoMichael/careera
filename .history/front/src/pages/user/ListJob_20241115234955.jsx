@@ -39,8 +39,8 @@ const ListJob = () => {
                         </div>
                     </div>
 
-                    <CardJob visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} firmSelected={firmSelected} setFirmSelected={setFirmSelected} />
-                    <FirmDialog visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} firmSelected={firmSelected} setFirmSelected={setFirmSelected} />
+                    <CardJob visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} />
+                    <FirmDialog visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} />
 
                     <Paginator first={first} rows={rows} totalRecords={120} className="mt-8 mb-12 font-poppins" onPageChange={onPageChange} />
 

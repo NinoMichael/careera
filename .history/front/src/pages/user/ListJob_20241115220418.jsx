@@ -1,26 +1,14 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import VMenu from "../../components/VMenu"
-import { Paginator } from 'primereact/paginator'
 import ToolBar from "../../components/ToolBar"
 import { useLanguage } from "../../utils/LangConfig"
 import SearchMain from "../../components/SearchMain"
 import CardJob from "../../components/CardJob"
-import FirmDialog from "../../components/FirmDialog"
 
 const ListJob = () => {
     const { t } = useLanguage()
     const [collapsed, setCollapsed] = useState(false)
-    const [visibleFirm, setVisibleFirm] = useState(false)
-    const [firmSelected, setFirmSelected] = useState(null)
-
-    const [first, setFirst] = useState(0)
-    const [rows, setRows] = useState(10)
-
-    const onPageChange = (event) => {
-        setFirst(event.first);
-        setRows(event.rows);
-    };
 
     return (
         <>
@@ -30,7 +18,7 @@ const ListJob = () => {
                 <ToolBar collapsed={collapsed} setCollapsed={setCollapsed} />
 
                 <main className={` ${collapsed ? 'ms-24' : 'ms-64'} me-12 mt-7`}>
-                    <div className="flex justify-between mb-8">
+                    <div className="flex justify-between mb-10">
                         <SearchMain className="flex flex-row space-x-4" />
 
                         <div className="flex justify-start space-x-6 mt-3">
@@ -39,10 +27,7 @@ const ListJob = () => {
                         </div>
                     </div>
 
-                    <CardJob visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} firmSelected={firmSelected} setFirmSelected={setFirmSelected} />
-                    <FirmDialog visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} firmSelected={firmSelected} setFirmSelected={setFirmSelected} />
-
-                    <Paginator first={first} rows={rows} totalRecords={120} className="mt-8 mb-12 font-poppins" onPageChange={onPageChange} />
+                    <CardJob />
 
                 </main >
             </motion.div >

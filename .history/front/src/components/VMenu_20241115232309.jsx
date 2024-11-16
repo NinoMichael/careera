@@ -5,7 +5,6 @@ import { useLanguage } from "../utils/LangConfig"
 import { InputSwitch } from "primereact/inputswitch"
 import { Menu } from "primereact/menu"
 import logo from '../assets/icons/logo.png'
-import PropTypes from "prop-types"
 
 const VMenu = ({ collapsed, setCollapsed }) => {
     const { t } = useLanguage()
@@ -108,11 +107,6 @@ const VMenu = ({ collapsed, setCollapsed }) => {
             <Menu model={items} className={`w-64 font-poppins text-sm border border-none shadow-xl h-[100vh] transition-all duration-300 ${collapsed ? 'w-[5vw]' : 'w-[15vw]'}`} />
         </div>
     )
-}
-
-VMenu.propTypes = {
-    collapsed: PropTypes.bool.isRequired,
-    setCollapsed: PropTypes.func.isRequired
 }
 
 export default VMenu

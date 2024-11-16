@@ -111,10 +111,5 @@ background-color: transparent !important;
 }
 
 .p-paginator .p-paginator-pages .p-paginator-page {
-  @apply font-poppins;
-}
-
-.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
-  @apply bg-blackCustom;
-  @apply text-white;
+  @apply font-poppins
 }

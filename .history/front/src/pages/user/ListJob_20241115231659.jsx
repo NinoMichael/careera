@@ -6,21 +6,13 @@ import ToolBar from "../../components/ToolBar"
 import { useLanguage } from "../../utils/LangConfig"
 import SearchMain from "../../components/SearchMain"
 import CardJob from "../../components/CardJob"
-import FirmDialog from "../../components/FirmDialog"
 
 const ListJob = () => {
     const { t } = useLanguage()
     const [collapsed, setCollapsed] = useState(false)
-    const [visibleFirm, setVisibleFirm] = useState(false)
-    const [firmSelected, setFirmSelected] = useState(null)
 
     const [first, setFirst] = useState(0)
     const [rows, setRows] = useState(10)
-
-    const onPageChange = (event) => {
-        setFirst(event.first);
-        setRows(event.rows);
-    };
 
     return (
         <>
@@ -39,10 +31,9 @@ const ListJob = () => {
                         </div>
                     </div>
 
-                    <CardJob visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} firmSelected={firmSelected} setFirmSelected={setFirmSelected} />
-                    <FirmDialog visibleFirm={visibleFirm} setVisibleFirm={setVisibleFirm} firmSelected={firmSelected} setFirmSelected={setFirmSelected} />
+                    <CardJob />
 
-                    <Paginator first={first} rows={rows} totalRecords={120} className="mt-8 mb-12 font-poppins" onPageChange={onPageChange} />
+                    <Paginator first={first} rows={rows} totalRecords={120} rowsPerPageOptions={[10, 20, 30]} className="mt-8" />
 
                 </main >
             </motion.div >
