@@ -10,7 +10,7 @@ import { Divider } from "primereact/divider"
 import { Link, useNavigate } from "react-router-dom"
 
 import imgLogin from '../../assets/img-login.png'
-import DropdownLang from "../../components/DropdownLang"
+import DropdownLang from "../../components/user/DropdownLang"
 
 const Login = () => {
     const { t } = useLanguage()

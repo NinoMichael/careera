@@ -1,7 +1,7 @@
 import { useLanguage } from "../../utils/LangConfig"
 import { motion } from "framer-motion"
 import { useNavigate } from "react-router-dom"
-import DropdownLang from "../../components/DropdownLang"
+import DropdownLang from "../../components/user/DropdownLang"
 
 import logo from '../../assets/icons/logo.png'
 import { Button } from "primereact/button"

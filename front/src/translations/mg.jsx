@@ -91,6 +91,9 @@ const en = {
     setting: "Fanamboarana",
     location: "Toerana",
     filter: "Sivana",
+
+    // === LOGIN COMPANY ===
+    username: "Solon'anarana",
 }
 
 export default en

@@ -91,6 +91,9 @@ const fr = {
     setting: "Paramètres",
     location: "Location",
     filter: "Filtre",
+
+    // === LOGIN COMPANY ===
+    username: "Identifiant",
 }
 
 export default fr

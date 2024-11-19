@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
-import MenuUser from "../../components/Menu"
+import MenuUser from "../../components/user/Menu"
 import { useLanguage } from "../../utils/LangConfig"
 import { Link } from "react-router-dom"
 import { Button } from "primereact/button"
@@ -11,7 +11,7 @@ import { FloatLabel } from "primereact/floatlabel"
 import { InputText } from "primereact/inputtext"
 
 import '../../index.css'
-import SearchBar from "../../components/SearchBar"
+import SearchBar from "../../components/user/SearchBar"
 import promo from '../../assets/img-promo.png'
 import recruiter from '../../assets/recruiter.png'
 import linkedin from '../../assets/icons/linkedin.png'
@@ -24,7 +24,7 @@ import ingenosya from '../../assets/ingenosya.png'
 import bni from '../../assets/bni.png'
 import job from '../../assets/job.png'
 import aboutImg from '../../assets/about-img.png'
-import FooterUser from "../../components/FooterUser"
+import FooterUser from "../../components/user/FooterUser"
 
 const Home = () => {
     const { t } = useLanguage()

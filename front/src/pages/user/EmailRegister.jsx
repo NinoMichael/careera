@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import DropdownLang from "../../components/DropdownLang"
+import DropdownLang from "../../components/user/DropdownLang"
 import { useNavigate } from "react-router-dom"
 import { Button } from "primereact/button"
 import { Divider } from "primereact/divider"

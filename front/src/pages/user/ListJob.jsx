@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
-import VMenu from "../../components/VMenu"
+import VMenu from "../../components/user/VMenu"
 import { Paginator } from 'primereact/paginator'
-import ToolBar from "../../components/ToolBar"
+import ToolBar from "../../components/user/ToolBar"
 import { useLanguage } from "../../utils/LangConfig"
-import SearchMain from "../../components/SearchMain"
-import CardJob from "../../components/CardJob"
-import FirmDialog from "../../components/FirmDialog"
+import SearchMain from "../../components/user/SearchMain"
+import CardJob from "../../components/user/CardJob"
+import FirmDialog from "../../components/user/FirmDialog"
 
 const ListJob = () => {
     const { t } = useLanguage()

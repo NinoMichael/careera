@@ -10,6 +10,7 @@ import HomeRegister from './pages/user/HomeRegister'
 import EmailRegister from './pages/user/EmailRegister'
 import PasswordRegister from './pages/user/PasswordRegister'
 import ListJob from './pages/user/ListJob'
+import LoginCompany from './pages/company/Login'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -36,6 +37,7 @@ function App() {
               <SplashScreen />
             ) : (
               <Routes>
+                {/*==== USER ROUTES === */}
                 <Route path="/" element={<SplashScreen />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/login" element={<Login />} />
@@ -43,6 +45,9 @@ function App() {
                 <Route path="/email-register" element={<EmailRegister />} />
                 <Route path="/password-register" element={<PasswordRegister />} />
                 <Route path="/list-job" element={<ListJob />} />
+
+                {/*==== FIRM ROUTES === */}
+                <Route path="/login-company" element={<LoginCompany />} />
               </Routes>
             )}</BrowserRouter>
 

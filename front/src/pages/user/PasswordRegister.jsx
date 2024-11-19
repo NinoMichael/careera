@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
-import DropdownLang from "../../components/DropdownLang"
+import DropdownLang from "../../components/user/DropdownLang"
 import { Button } from "primereact/button"
 import { Checkbox } from "primereact/checkbox"
 import { FloatLabel } from "primereact/floatlabel"
