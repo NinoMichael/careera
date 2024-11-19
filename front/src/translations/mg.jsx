@@ -94,6 +94,11 @@ const en = {
 
     // === LOGIN COMPANY ===
     username: "Solon'anarana",
+
+    // === DASHBOARD COMPANY ===
+    dashboard: "Jery todika",
+    offer: "Tolotra",
+    archive: "Tahiry",
 }
 
 export default en

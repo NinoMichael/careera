@@ -118,3 +118,12 @@ background-color: transparent !important;
   @apply bg-blackCustom;
   @apply text-white;
 }
+
+.custom-input-search-for-company:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-border-search {
+  border : 1px solid white;
+}

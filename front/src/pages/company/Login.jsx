@@ -5,6 +5,7 @@ import { FloatLabel } from "primereact/floatlabel"
 import { InputText } from "primereact/inputtext"
 import { Password } from "primereact/password"
 import { Button } from "primereact/button"
+import { useNavigate } from "react-router-dom"
 
 import imgLogin from '../../assets/img-login.png'
 import DropdownLang from "../../components/user/DropdownLang"
@@ -13,6 +14,8 @@ const LoginCompany = () => {
     const { t } = useLanguage()
     const [identifiant, setIdentifiant] = useState('')
     const [mdp, setMdp] = useState('')
+
+    const navigate = useNavigate()
 
     return (
         <div className="overflow-y-hidden">
@@ -49,7 +52,8 @@ const LoginCompany = () => {
                                 </FloatLabel>
                             </div>
 
-                            <Button label={t('login')} type="submit" className="bg-greenCustom text-white mt-12 font-poppins border border-none outline outline-none rounded py-2 w-full" />
+                            <Button label={t('login')} type="submit" className="bg-greenCustom text-white mt-12 font-poppins border border-none outline outline-none rounded py-2 w-full"
+                                onClick={() => navigate('/dashboard-company')} />
                         </form>
                     </section>
                 </main>

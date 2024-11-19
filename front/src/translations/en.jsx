@@ -94,6 +94,11 @@ const en = {
 
     // === LOGIN COMPANY ===
     username: "Username",
+
+    // === DASHBOARD COMPANY ===
+    dashboard: "Dashboard",
+    offer: "Job",
+    archive: "Archive",
 }
 
 export default en

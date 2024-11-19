@@ -94,6 +94,12 @@ const fr = {
 
     // === LOGIN COMPANY ===
     username: "Identifiant",
+
+    // === DASHBOARD COMPANY ===
+    dashboard: "Tableau de bord",
+    offer: "Offre",
+    archive: "Archive",
+
 }
 
 export default fr

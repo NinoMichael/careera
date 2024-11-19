@@ -11,6 +11,7 @@ import EmailRegister from './pages/user/EmailRegister'
 import PasswordRegister from './pages/user/PasswordRegister'
 import ListJob from './pages/user/ListJob'
 import LoginCompany from './pages/company/Login'
+import DashboardCompany from './pages/company/Dashboard'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -48,6 +49,7 @@ function App() {
 
                 {/*==== FIRM ROUTES === */}
                 <Route path="/login-company" element={<LoginCompany />} />
+                <Route path="/dashboard-company" element={<DashboardCompany />} />
               </Routes>
             )}</BrowserRouter>
 
